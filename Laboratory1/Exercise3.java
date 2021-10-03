@@ -54,12 +54,7 @@ public class Exercise3 {
 	}
 
 	private static void displayArray(int[] array) {
-		// System.out.println(Arrays.toString(array));
-
-		for (int i = 0; i < array.length; ++i) {
-			System.out.print(array[i] + " ");
-		}
-		System.out.println();
+		System.out.println(Arrays.toString(array));
 	}
 
 	private static int[] sortArray(int[] array) {
@@ -67,8 +62,8 @@ public class Exercise3 {
 		return array;
 	}
 
-	private static boolean isValueInArray(int position, int[] array) {
-		int searchResult = Arrays.binarySearch(array, position);
+	private static boolean isValueInArray(int value, int[] array) {
+		int searchResult = Arrays.binarySearch(array, value);
 		return searchResult >= 0;
 	}
 
